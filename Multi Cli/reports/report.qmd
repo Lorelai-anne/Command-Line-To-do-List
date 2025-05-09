@@ -1,0 +1,144 @@
+---
+title: Homework 13 - Multi Command Line Interfaces
+---
+
+Homework 13 is a multi-command CLI that serves up at least three subcommands.  
+
+* [LINK to repo for HW13](https://github.com/cmsc-vcu/cmsc427-sp2025-hw13-Lorelai-anne)
+
+# Command `add` - To-do list addition
+
+This command adds a task inputted by the user into a txt file called tasks.
+
+## Key features
+
+* user can input the task with the use of quotation marks whe they are calling the command
+* default help is available with --help
+
+## Command documentation
+
+### Example command: Default usage
+
+```default
+mytools add
+Usage: _main.py add [OPTIONS] TASK
+Try '_main.py add --help' for help.
+
+Error: Missing argument 'TASK'
+```
+
+### Example command: more complicated example
+
+```default
+mytools add "read the hunger games"
+Task added: read the hunger games"
+mytools add "Clean my room"
+Task added: Clean my room
+```
+
+## Sample screens
+
+![](D:\CMSC427\cmsc427-sp2025-hw13-Lorelai-anne\reports\assets\cliADD.png)
+
+
+# Command `list` - Full to-do list
+
+This command reads from the txt file called list and lists all tasks added into the command line. The list starting at one and in order of when they were added.
+
+## Key features
+
+* can be called by just saying list
+* default help is available with --help
+
+## Command documentation
+
+### Example command: Default usage
+
+```default
+mytools list
+No task file found
+```
+
+### Example command: more complicated example
+
+```default
+mytools list
+No task file found
+mytools add "read hunger games"
+mytools add "go grocery shopping"
+mytools list
+1. read hunger games
+2. go grocery shopping
+```
+
+## Sample screens
+
+
+![](D:\CMSC427\cmsc427-sp2025-hw13-Lorelai-anne\reports\assets\cliLIST.png)
+
+
+
+# Command `done` - Task finisher
+
+This command gives the user the ability to remove or "finish" a task they previosuly added to their list of tasks, which then removes them from the txt file "tasks".
+
+## Key features
+
+* task can be finished by using the number of the task i.e. `done #`
+* default help is available with --help
+
+## Command documentation
+
+### Example command: Default usage
+
+```default
+mytools list
+No task file found
+mytools done
+No task file found
+```
+
+### Example command: more complicated example
+
+```default
+mytools add "Code an app"
+mytools add "make dinner"
+mytools add "go grocery shopping"
+mytools list
+1. Code an app
+2. make dinner
+3. go grocery shopping
+mytools done 2
+Task completed: make dinner
+mytools list
+1. Code an app
+2. go grocery shopping
+```
+
+## Sample screens
+
+
+![](D:\CMSC427\cmsc427-sp2025-hw13-Lorelai-anne\reports\assets\cliDONE.png)
+
+
+
+# Reflection
+
+How much time did you spend on this specific assignment?
+: Not too long, definitely not as long as homework 12. This assignment was definitely easier to one, come up with ideas, and two, implement. When I knew the general capabilities of making a cli.
+
+What was the easiest part of this specific assignment?
+: Coming up with the ideas for the multi command line. Lowkey it was kind of fun. Coming up with ideas is always fun to do, even though it takes a while.
+
+What is the hardest part of this specific assignment?
+: Coding for sure. Again, similar to last assignment, while it wasn't super difficult. At the end of the day it's still coding and requires active thought. And thinking about how to code something lowkey takes mental brain power which I'm running out of by this time in the year.
+
+What can be done to make this assignment more fun?  Should homework assignments be fun?
+: Homework assignments should absolutely be fun. I think the more fun assignments are, the more likely I am to think of a class more like an activity than a class. I personally like to enjoy doing my homework and feel like I'm actually learning something that I could enjoy. I think this assignment, for what it is, is enjoyable enough. At least right now I can't think of anything that would make this specific assignment more interesting.
+
+
+# README
+
+::: {style="background:lightgray; margin-left:20px; border-top: 3px solid black; border-bottom: 3px solid black; padding-left:20px; padding-right:20px"}
+{{< include ../README.md >}}
+:::

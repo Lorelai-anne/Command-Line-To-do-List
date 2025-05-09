@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mytools"
+version = "0.1.0"
+description = ""
+authors = ["Lorelai Davis <davisla10@vcu.edu>"]
+readme = "README.md"
+packages = [{include = "reports"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+jupyter = "^1.0.0"
+matplotlib = "^3.8.4"
+plotly = "^5.20.0"
+click = "^8.1.7"
+loguru = "^0.7.2"
+pyfiglet = "^1.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+mytools = "reports._main:main"

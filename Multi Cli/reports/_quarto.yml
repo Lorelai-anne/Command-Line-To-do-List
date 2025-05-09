@@ -1,0 +1,12 @@
+
+author:
+  - name: Lorelai Davis
+    email: davisla10@vcu.edu
+
+date: last-modified
+
+
+format:
+  html:
+    embed-resources: true
+    theme: cosmo
